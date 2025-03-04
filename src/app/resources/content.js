@@ -55,7 +55,8 @@ const home = {
   headline: <>Yoo, I'm Braya Cheat✌🏻</>,
   subline: (
     <>
-      a software developer & also a music producer based in <InlineCode>Phnom Penh</InlineCode>,
+      Software Developer & Music Producer Based In Phnom Penh. Cambodia
+      {/* <InlineCode>Phnom Penh</InlineCode>, */}
     </>
   ),
 };

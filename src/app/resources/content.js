@@ -52,13 +52,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Software Developer</>,
+  headline: <>Yoo, I'm Braya Cheat✌🏻</>,
   subline: (
     <>
-      Yoo, I'm Braya✌🏻, a software developer based in{" "}
-      <InlineCode>Phnom Penh</InlineCode>,
-      <br />
-      also a music producer.
+      a software developer & also a music producer based in <InlineCode>Phnom Penh</InlineCode>,
     </>
   ),
 };

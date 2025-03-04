@@ -8,6 +8,7 @@ import { baseURL, effects, style } from "@/app/resources";
 
 import { Inter } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
+import localFont from 'next/font/local'
 
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
@@ -38,6 +39,12 @@ export async function generateMetadata() {
     },
   };
 }
+
+const myFont = localFont({
+  src: "/circular.ttf",
+  variable: "--font-primary",
+  display: "swap",
+});
 
 const primary = Inter({
   variable: "--font-primary",
@@ -84,7 +91,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       data-surface={style.surface}
       data-transition={style.transition}
       className={classNames(
-        primary.variable,
+        myFont.variable,
+        // primary.variable,
         secondary ? secondary.variable : "",
         tertiary ? tertiary.variable : "",
         code.variable,

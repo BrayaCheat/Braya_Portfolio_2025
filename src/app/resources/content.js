@@ -37,9 +37,9 @@ const social = [
     link: "https://www.linkedin.com/company/once-ui/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
+    name: "Youtube",
+    icon: "youtube",
+    link: "https://www.youtube.com/@brayacheat7117",
   },
   {
     name: "Email",
@@ -52,10 +52,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Yoo, I'm Braya Cheat✌🏻</>,
+  headline: <>Yoo, It's Me Braya Cheat✌🏻</>,
   subline: (
     <>
-      Software Developer & Music Producer Based In Phnom Penh. Cambodia
+      Software Developer & Music Producer Based In Phnom Penh.
       {/* <InlineCode>Phnom Penh</InlineCode>, */}
     </>
   ),
@@ -222,7 +222,7 @@ const about = {
         ],
       },
       {
-        title: "Frontend Development",
+        title: "Frontend Frameworks",
         description: <>VueJS, NuxtJS, ReactJS, NextJS (Basic Knowledge).</>,
         images: [
           // {
@@ -234,7 +234,7 @@ const about = {
         ],
       },
       {
-        title: "Backend Development",
+        title: "Backend Frameworks",
         description: (
           <>NodeJS, ExpresJS, Supabase, Springboot (Basic Knowledge).</>
         ),
@@ -248,22 +248,10 @@ const about = {
         ],
       },
       {
-        title: "DevOps & Deployment",
-        description: <>Vercel, Render, Railway.</>,
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-04.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
-      },
-      {
         title: "Other Skills & Tools",
         description: (
           <>
-            FL Studio, Git, Github, MYSQL, MongoDB, DBeaver, Postman, PrismaORM,
+            FL Studio, Git, Github, MYSQL, MongoDB, DBeaver, Postman, PrismaORM,Vercel, Render, Railway.
             Docker (Basic Knowledge).
           </>
         ),
@@ -282,7 +270,7 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "My Blogs",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -290,7 +278,7 @@ const blog = {
 
 const work = {
   label: "Work",
-  title: "My projects",
+  title: "My Projects",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes

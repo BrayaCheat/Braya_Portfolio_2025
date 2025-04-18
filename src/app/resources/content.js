@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Software Developer & Music Producer",
+  role: "Software Developer",
   avatar: "/images/avatar.jpg",
   location: "Asia/Phnom_Penh", // Use the IANA time zone identifier for Phnom Penh, Cambodia
   languages: ["English", "Khmer"], // optional: Leave the array empty if you don't want to display languages
@@ -32,11 +32,6 @@ const social = [
     link: "https://github.com/BrayaCheat",
   },
   {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
     name: "Youtube",
     icon: "youtube",
     link: "https://www.youtube.com/@brayacheat7117",
@@ -55,7 +50,7 @@ const home = {
   headline: <>Yoo, It's Me Braya Cheat✌🏻</>,
   subline: (
     <>
-      Software Developer & Music Producer Based In Phnom Penh.
+      Software Developer Based In Phnom Penh.
       {/* <InlineCode>Phnom Penh</InlineCode>, */}
     </>
   ),
@@ -80,14 +75,79 @@ const about = {
     display: true,
     title: "Introduction",
     description: (
-      <>
-        Braya is a software developer and music producer based in Phnom Penh,
-        passionate about building scalable applications and crafting immersive
-        soundscapes. With expertise in frontend, backend development, and the
-        fusion of design, technology, and music, he creates seamless digital
-        experiences that leave a lasting impact.
-      </>
-    ),
+      <div className="space-y-6 text-neutral-800 dark:text-neutral-200">
+
+        {/* Header */}
+        <div className="mb-6">
+          <p className="text-2xl font-bold">
+            <span className="wave">👋</span> Yo, I'm Braya!
+            <span className="text-sm ml-2 bg-yellow-100 dark:bg-yellow-900/30 px-2 py-0.5 rounded-full">Meme Stack Engineer</span>
+          </p>
+        </div>
+
+        {/* Roles */}
+        <div className="flex gap-4 mb-8">
+          <span className="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+            👨‍💻 By Day: Meme Fullstack
+          </span>
+          <span className="inline-flex items-center gap-1 rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800 dark:bg-purple-900 dark:text-purple-200">
+            🎧 By Night: Bass Memelord
+          </span>
+        </div>
+
+        {/* Location */}
+        <p className="text-lg mb-8">
+          📍 Phnom Penh | WiFi: <code className="text-green-600 dark:text-green-400">5 bars</code> | 808s: <code className="text-red-600 dark:text-red-400">11/10</code>
+        </p>
+
+        <div className="prose dark:prose-invert max-w-none">
+          {/* Meme Stack Skills */}
+          <div className="mb-10">
+            <h3 className="text-xl font-semibold mb-4">Meme Stack Arsenal:</h3>
+            <ul className="list-disc pl-6 space-y-3">
+              <li><code>useMemo()</code> but mostly for memes</li>
+              <li>State management with <code>spaghettiReducer</code></li>
+              <li>APIs that return <code>418 I'm a teapot</code></li>
+              <li>CSS that works <em>(by accident)</em></li>
+            </ul>
+          </div>
+
+          {/* Music Meme Skills */}
+          <div className="mb-10">
+            <h3 className="text-xl font-semibold mb-4">Audio Meme Tactics:</h3>
+            <ul className="list-disc pl-6 space-y-3">
+              <li>Drops so filthy they need a <code>git clean</code></li>
+              <li>Naming tracks like <code>dont_delete_this_one_v69.wav</code></li>
+              <li>Using <code>useSound()</code> for *everything*</li>
+            </ul>
+          </div>
+
+          {/* Collab CTA */}
+          <div className="mt-8 mb-12">
+            <p className="font-medium text-lg mb-4">Hit me up for:</p>
+            <div className="flex flex-wrap gap-3">
+              <span className="inline-flex items-center gap-1 bg-red-100 dark:bg-red-900/50 px-3 py-2 rounded-md text-sm">
+                🔥 Code that compiles (60% of the time)
+              </span>
+              <span className="inline-flex items-center gap-1 bg-green-100 dark:bg-green-900/50 px-3 py-2 rounded-md text-sm">
+                🎵 Beats that break speakers (100% of the time)
+              </span>
+              <span className="inline-flex items-center gap-1 bg-yellow-100 dark:bg-yellow-900/50 px-3 py-2 rounded-md text-sm">
+                🤝 Dad jokes about <code>undefined</code>
+              </span>
+            </div>
+          </div>
+
+          {/* Meme Quote */}
+          <blockquote className="mt-10 mb-6 italic border-l-4 border-pink-500 dark:border-pink-400 pl-6 py-2 text-lg">
+            "If my code runs, it's not stupid.<br />
+            If my beats slap, it's not luck.<br />
+            <span className="text-sm">(Disclaimer: Might be both)</span>"
+            <span className="ml-2">🚀🔥</span>
+          </blockquote>
+        </div>
+      </div>
+    )
   },
   work: {
     display: true, // set to false to hide this section
@@ -121,7 +181,7 @@ const about = {
       {
         company: "Advanced MSP",
         timeframe: "2023 - 2024",
-        role: "API Analyst",
+        role: "API Analyst (Internship)",
         achievements: [
           <>
             Learned and applied API integration principles within the ERPNext
@@ -185,18 +245,7 @@ const about = {
             proficiency in academic and professional English communication.
           </>
         ),
-      },
-      {
-        name: "Music Academy",
-        description: (
-          <>
-            Electronic dance music creator, focusing on the complete production
-            process from arrangement and mixing to mastering, while also
-            developing strategies for audience engagement within the vinahouse
-            music scene.
-          </>
-        ),
-      },
+      }
     ],
   },
   technical: {
@@ -222,8 +271,8 @@ const about = {
         ],
       },
       {
-        title: "Frontend Frameworks",
-        description: <>VueJS, NuxtJS, ReactJS, NextJS (Basic Knowledge).</>,
+        title: "Frontend Technologies",
+        description: <>VueJS, NuxtJS, ReactJS, NextJS.</>,
         images: [
           // {
           //   src: "/images/projects/project-01/cover-04.jpg",
@@ -234,9 +283,9 @@ const about = {
         ],
       },
       {
-        title: "Backend Frameworks",
+        title: "Backend Technologies",
         description: (
-          <>NodeJS, ExpresJS, Supabase, Springboot (Basic Knowledge).</>
+          <>NodeJS, ExpressJS, Supabase, Springboot.</>
         ),
         images: [
           // {
@@ -251,8 +300,8 @@ const about = {
         title: "Other Skills & Tools",
         description: (
           <>
-            FL Studio, Git, Github, MYSQL, MongoDB, DBeaver, Postman, PrismaORM,Vercel, Render, Railway.
-            Docker (Basic Knowledge).
+            Git, Github, MYSQL, MongoDB, DBeaver, Postman,
+            Prisma,Vercel, Render, Railway, Docker.
           </>
         ),
         images: [

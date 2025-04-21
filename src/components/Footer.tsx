@@ -36,7 +36,7 @@ export const Footer = () => {
             </SmartLink> */}
           </Text>
         </Text>
-        <Flex gap="16">
+        <Flex gap="20">
           {social.map(
             (item) =>
               // item.link && (

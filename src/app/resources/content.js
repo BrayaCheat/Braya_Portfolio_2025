@@ -185,22 +185,78 @@ const about = {
         ],
         images: [],
       },
+      // {
+      //   company: "Eric Kayser",
+      //   timeframe: "2021 – 2022",
+      //   role: "Barista",
+      //   achievements: [
+      //     <>
+      //       Demonstrated exceptional customer service skills in a high-volume setting, providing an efficient and positive experience for customers.
+      //     </>,
+      //     <>
+      //       Adapted quickly to new procedures and technologies, taking initiative to streamline processes and ensure smooth operations during peak hours.
+      //     </>,
+      //     <>
+      //       Maintained a professional and friendly demeanor, effectively handling customer inquiries and building rapport in a fast-paced environment.
+      //     </>,
+      //   ],
+      //   images: [],
+      // },
       {
-        company: "Eric Kayser",
-        timeframe: "2021 – 2022",
-        role: "Barista",
+        company: "MN Juicy",
+        timeframe: "2024 - 2025",
+        role: "Software Developer (Freelance)",
         achievements: [
           <>
-            Demonstrated exceptional customer service skills in a high-volume setting, providing an efficient and positive experience for customers.
+            <a href="https://mn-juicy.vercel.app/menu" target="_blank" rel="noopener noreferrer">
+              View live demo
+            </a>
           </>,
           <>
-            Adapted quickly to new procedures and technologies, taking initiative to streamline processes and ensure smooth operations during peak hours.
+            Led the design and development of a mobile-first digital drink ordering platform using Nuxt.js and Tailwind CSS, providing a fast, modern, and intuitive user experience.
           </>,
           <>
-            Maintained a professional and friendly demeanor, effectively handling customer inquiries and building rapport in a fast-paced environment.
+            Built and integrated a real-time Telegram notification system that instantly alerts staff of new orders, significantly reducing response time and improving operational flow.
           </>,
+          <>
+            Implemented an interactive location picker using Leaflet.js, allowing customers to easily drop a pin for precise delivery — capturing only essential details: name, phone number, and location.
+          </>,
+          <>
+            Streamlined user and staff experiences with features like dynamic category filtering, product management, and QR code access for effortless mobile ordering.
+          </>,
+          <>
+            Deployed on Vercel to ensure optimized performance, fast global delivery, and robust uptime with modern cloud deployment practices.
+          </>
         ],
-        images: [],
+        images: []
+      },
+      {
+        company: "VORTEX AI CHATBOT",
+        timeframe: "2025 - Present",
+        role: "Software Developer (Side Project)",
+        achievements: [
+          <>
+            <a href="https://braya-chatbot.vercel.app" target="_blank" rel="noopener noreferrer">
+              View live demo
+            </a>
+          </>,
+          <>
+            Developed an AI-powered chatbot using Nuxt 3 and integrated with the Gemini API to deliver fast, responsive, and intelligent conversations that enhance user interaction.
+          </>,
+          <>
+            Designed and implemented an intuitive user interface that facilitates easy communication, resulting in a seamless chat experience for users across devices.
+          </>,
+          <>
+            Focused on optimizing the chatbot's performance, ensuring smooth, real-time processing of messages and responses through effective API calls and intelligent state management.
+          </>,
+          <>
+            Leveraged modern technologies like Nuxt 3, Tailwind CSS, and the Gemini API to create an interactive platform capable of handling dynamic user queries and providing accurate responses.
+          </>,
+          <>
+            Deployed the chatbot on Vercel to guarantee fast loading times, scalability, and reliable performance across various regions and devices.
+          </>
+        ],
+        images: []
       }
     ],
   },

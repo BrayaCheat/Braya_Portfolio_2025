@@ -14,6 +14,7 @@ import { baseURL } from "@/app/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import styles from "@/components/about/about.module.scss";
 import { person, about, social } from "@/app/resources/content";
+import React from "react";
 
 export async function generateMetadata() {
   const title = about.title;
@@ -174,30 +175,33 @@ export default function About() {
               {person.role}
             </Text>
             {social.length > 0 && (
-              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="8" wrap horizontal="center" fitWidth>
+              <Flex className={styles.blockAlign} paddingTop="20" paddingBottom="8" gap="20" wrap horizontal="center" fitWidth>
                 {social.map(
                   (item) =>
-                    item.link && (
-                        <>
-                            <Button
-                                className="s-flex-hide"
-                                key={item.name}
-                                href={item.link}
-                                prefixIcon={item.icon}
-                                label={item.name}
-                                size="s"
-                                variant="secondary"
-                            />
-                            <IconButton
-                                className="s-flex-show"
-                                size="l"
-                                key={`${item.name}-icon`}
-                                href={item.link}
-                                icon={item.icon}
-                                variant="secondary"
-                            />
-                        </>
-                    ),
+                    // item.link && (
+                    //     <>
+                    //         <Button
+                    //             className="s-flex-hide"
+                    //             key={item.name}
+                    //             href={item.link}
+                    //             prefixIcon={item.icon}
+                    //             label={item.name}
+                    //             size="s"
+                    //             variant="secondary"
+                    //         />
+                    //         <IconButton
+                    //             className="s-flex-show"
+                    //             size="l"
+                    //             key={`${item.name}-icon`}
+                    //             href={item.link}
+                    //             icon={item.icon}
+                    //             variant="secondary"
+                    //         />
+                    //     </>
+                    // ),
+                    <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer">
+                      {item.icon}
+                    </a>
                 )}
               </Flex>
             )}

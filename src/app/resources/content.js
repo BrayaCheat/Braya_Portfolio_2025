@@ -67,7 +67,7 @@ const home = {
 };
 
 const about = {
-  label: "About",
+  label: "Information",
   title: "About me",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
@@ -207,11 +207,11 @@ const about = {
         timeframe: "2024 - 2025",
         role: "Software Developer (Freelance)",
         achievements: [
-          <>
-            <a href="https://mn-juicy.vercel.app/menu" target="_blank" rel="noopener noreferrer">
-              View live demo
-            </a>
-          </>,
+          // <>
+          //   <a href="https://mn-juicy.vercel.app/menu" target="_blank" rel="noopener noreferrer">
+          //     View live demo
+          //   </a>
+          // </>,
           <>
             Led the design and development of a mobile-first digital drink ordering platform using Nuxt.js and Tailwind CSS, providing a fast, modern, and intuitive user experience.
           </>,
@@ -235,11 +235,11 @@ const about = {
         timeframe: "2025 - Present",
         role: "Software Developer (Side Project)",
         achievements: [
-          <>
-            <a href="https://braya-chatbot.vercel.app" target="_blank" rel="noopener noreferrer">
-              View live demo
-            </a>
-          </>,
+          // <>
+          //   <a href="https://braya-chatbot.vercel.app" target="_blank" rel="noopener noreferrer">
+          //     View live demo
+          //   </a>
+          // </>,
           <>
             Developed an AI-powered chatbot using Nuxt 3 and integrated with the Gemini API to deliver fast, responsive, and intelligent conversations that enhance user interaction.
           </>,
@@ -265,26 +265,27 @@ const about = {
     title: "Educations",
     institutions: [
       {
-        name: "BakTouk High School",
+        name: "Bak Touk High School",
         description: (
           <>
-            Completed primary and secondary education at BakTouk High School, earning the Bac II qualification with strong academic performance, laying the foundation for a successful academic and professional journey.
+            Completed primary and secondary education with Bac II qualification and strong academic performance.
           </>
         ),
       },
       {
-        name: "Royal University of Phnom Penh",
+        name: "Royal University of Phnom Penh (RUPP)",
         description: (
           <>
-            Earned a Bachelor's degree in Computer Science, specializing in software development and system architecture. Currently pursuing a Master's degree, further advancing expertise in cutting-edge technologies and advanced computational principles.
+            Bachelor’s Degree in Computer Science — focused on software development and system architecture.
+            Currently pursuing a Master’s Degree to deepen expertise in advanced technologies.
           </>
         ),
       },
       {
-        name: "Australia Centre of Education",
+        name: "Australia Centre for Education (ACE)",
         description: (
           <>
-            Successfully completed an IELTS preparation program, achieving high proficiency in academic and professional English communication, enhancing my ability to work in international and cross-functional teams.
+            Completed IELTS preparation program with high proficiency in academic and professional English communication.
           </>
         ),
       },

@@ -22,24 +22,34 @@ const newsletter = {
     </>
   ),
 };
-
+import { FaFacebook, FaTelegram, FaYoutube, FaGithub, FaGoogle } from "react-icons/fa6";
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
-    icon: "github",
+    icon: <FaGithub/>,
     link: "https://github.com/BrayaCheat",
   },
   {
     name: "Youtube",
-    icon: "youtube",
+    icon: <FaYoutube/>,
     link: "https://www.youtube.com/@brayacheat7117",
   },
   {
     name: "Email",
-    icon: "email",
+    icon: <FaGoogle/>,
     link: "mailto:prayacheat@gmail.com",
+  },
+  {
+    name: "Telegram",
+    icon: <FaTelegram/>,
+    link: "https://t.me/brayacheat19",
+  },
+  {
+    name: "Facebook",
+    icon: <FaFacebook/>,
+    link: "https://www.facebook.com/share/12L8Xoengpt/?mibextid=wwXIfr",
   },
 ];
 
@@ -47,10 +57,10 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Yoo, It's Me Braya Cheat✌🏻</>,
+  headline: <>Hello, I'm Braya Cheat ✨</>,
   subline: (
     <>
-      Software Developer Based In Phnom Penh.
+      A Software Developer based in Phnom Penh, Cambodia. Passionate about building innovative solutions and leveraging technology to solve real-world problems.
       {/* <InlineCode>Phnom Penh</InlineCode>, */}
     </>
   ),
@@ -75,75 +85,63 @@ const about = {
     display: true,
     title: "Introduction",
     description: (
-      <div className="space-y-6 text-neutral-800 dark:text-neutral-200">
-
-        {/* Header */}
-        <div className="mb-6">
-          <p className="text-2xl font-bold">
-            <span className="wave">👋</span> Yo, I'm Braya!
-            <span className="text-sm ml-2 bg-yellow-100 dark:bg-yellow-900/30 px-2 py-0.5 rounded-full">Meme Stack Engineer</span>
-          </p>
-        </div>
-
+      <div className="space-y-6">
+        <h3 className="text-xl font-semibold mb-4">Introduction:</h3>
         {/* Roles */}
-        <div className="flex gap-4 mb-8">
-          <span className="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-200">
-            👨‍💻 By Day: Meme Fullstack
-          </span>
-          <span className="inline-flex items-center gap-1 rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800 dark:bg-purple-900 dark:text-purple-200">
-            🎧 By Night: Bass Memelord
-          </span>
-        </div>
+        <ul className="text-[16px]">
+          <li><strong>Full Name:</strong> ChanChaoBraya Cheat</li>
+          <li><strong>Role:</strong> Software Developer</li>
+          <li><strong>By Day:</strong> Building fullstack applications with modern web technologies</li>
+          <li><strong>By Night:</strong> Exploring music production with a focus on the Vinahouse genre</li>
+          <li><strong>Location:</strong> Phnom Penh, Cambodia — driven by a love for technology and creative expression</li>
+        </ul>
 
-        {/* Location */}
-        <p className="text-lg mb-8">
-          📍 Phnom Penh | WiFi: <code className="text-green-600 dark:text-green-400">5 bars</code> | 808s: <code className="text-red-600 dark:text-red-400">11/10</code>
-        </p>
+        <br/>
 
         <div className="prose dark:prose-invert max-w-none">
-          {/* Meme Stack Skills */}
-          <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">Meme Stack Arsenal:</h3>
-            <ul className="list-disc pl-6 space-y-3">
-              <li><code>useMemo()</code> but mostly for memes</li>
-              <li>State management with <code>spaghettiReducer</code></li>
-              <li>APIs that return <code>418 I'm a teapot</code></li>
-              <li>CSS that works <em>(by accident)</em></li>
-            </ul>
-          </div>
 
-          {/* Music Meme Skills */}
-          <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">Audio Meme Tactics:</h3>
+          {/* Tech Stack */}
+          {/* <div className="mb-10">
+            <h3 className="text-xl font-semibold mb-4">Technical Skills:</h3>
             <ul className="list-disc pl-6 space-y-3">
-              <li>Drops so filthy they need a <code>git clean</code></li>
-              <li>Naming tracks like <code>dont_delete_this_one_v69.wav</code></li>
-              <li>Using <code>useSound()</code> for *everything*</li>
+              <li>Proficient in Java with hands-on experience using Spring Boot for building scalable backend services</li>
+              <li>Experienced in modern JavaScript frameworks, especially Vue.js and Nuxt.js for building dynamic UIs</li>
+              <li>Skilled in designing and consuming RESTful APIs with proper authentication and error handling</li>
+              <li>Comfortable working with relational databases like MySQL and integrating them into backend systems</li>
+              <li>Well-versed in building full-stack applications using a Java backend and JavaScript frontend stack</li>
             </ul>
-          </div>
+          </div> */}
+
+          {/* Music Skills */}
+          {/* <div className="mb-10">
+            <h3 className="text-xl font-semibold mb-4">Creative Pursuits:</h3>
+            <ul className="list-disc pl-6 space-y-3">
+              <li>Currently exploring music production with a focus on the Vinahouse genre</li>
+              <li>Experimenting with melodies, rhythms, and drops using beginner-friendly audio tools and plugins</li>
+              <li>Enjoy blending creative sound design with technical curiosity to improve my skills over time</li>
+            </ul>
+          </div> */}
 
           {/* Collab CTA */}
           <div className="mt-8 mb-12">
-            <p className="font-medium text-lg mb-4">Hit me up for:</p>
-            <div className="flex flex-wrap gap-3">
-              <span className="inline-flex items-center gap-1 bg-red-100 dark:bg-red-900/50 px-3 py-2 rounded-md text-sm">
-                🔥 Code that compiles (60% of the time)
-              </span>
-              <span className="inline-flex items-center gap-1 bg-green-100 dark:bg-green-900/50 px-3 py-2 rounded-md text-sm">
-                🎵 Beats that break speakers (100% of the time)
-              </span>
-              <span className="inline-flex items-center gap-1 bg-yellow-100 dark:bg-yellow-900/50 px-3 py-2 rounded-md text-sm">
-                🤝 Dad jokes about <code>undefined</code>
-              </span>
-            </div>
+            <h3 className="text-xl font-semibold mb-4">Open to opportunities involving:</h3>
+            <ul className="flex flex-wrap gap-3">
+              <li className="inline-flex items-center gap-1 bg-red-100 dark:bg-red-900/50 px-3 py-2 rounded-md text-sm">
+                Building reliable and scalable web applications
+              </li>
+              <li className="inline-flex items-center gap-1 bg-green-100 dark:bg-green-900/50 px-3 py-2 rounded-md text-sm">
+                Collaborating on creative and technical projects
+              </li>
+              <li className="inline-flex items-center gap-1 bg-yellow-100 dark:bg-yellow-900/50 px-3 py-2 rounded-md text-sm">
+                Contributing to meaningful, team-driven environments
+              </li>
+            </ul>
           </div>
 
-          {/* Meme Quote */}
+          {/* Personal Quote */}
           <blockquote className="mt-10 mb-6 italic border-l-4 border-pink-500 dark:border-pink-400 pl-6 py-2 text-lg">
-            "If my code runs, it's not stupid.<br />
-            If my beats slap, it's not luck.<br />
-            <span className="text-sm">(Disclaimer: Might be both)</span>"
-            <span className="ml-2">🚀🔥</span>
+            "I strive to write code that is both functional and thoughtful,
+            and to create experiences that connect people — whether through technology or music."
           </blockquote>
         </div>
       </div>
@@ -155,63 +153,55 @@ const about = {
     experiences: [
       {
         company: "VTECH",
-        timeframe: "2024 - Present",
+        timeframe: "2024 – Present",
         role: "Software Developer",
         achievements: [
           <>
-            Developed and optimized a high-performance online casino platform,
-            enhancing gameplay experience and reducing latency by 50%.
+            Developed a high-performance online gaming platform, improving UI responsiveness and reducing user latency by 50%. Optimized graphics for lower-end devices by minimizing resource-intensive effects, ensuring smooth performance on a wider range of hardware.
           </>,
           <>
-            Engineered and fine-tuned the Baccarat game logic, ensuring fair
-            play, seamless user interaction, and improved real-time
-            responsiveness.
+            Built and fine-tuned interactive game interfaces (e.g., Baccarat), ensuring smooth gameplay, real-time feedback, and seamless user experience.
+          </>,
+          <>
+            Actively collaborating with backend teams to integrate APIs and WebSocket events, while independently exploring Spring Boot through personal projects and tutorials.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/projects/project-01/cover-01.jpg",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        images: [],
       },
       {
         company: "Advanced MSP",
-        timeframe: "2023 - 2024",
-        role: "API Analyst (Internship)",
+        timeframe: "2023 – 2024",
+        role: "Software Developer (Internship)",
         achievements: [
           <>
-            Learned and applied API integration principles within the ERPNext
-            environment, contributing to a standardized system.
+            Gained hands-on experience in API integration within the ERPNext environment, contributing to the system's standardization and streamlining workflows.
           </>,
           <>
-            Supported a cross-functional team in a product launch, utilizing
-            ERPNext for relevant workflows and reporting.
+            Collaborated with cross-functional teams to support the product launch, assisting with ERPNext workflows and helping document API processes for seamless integration.
+          </>,
+          <>
+            Developed a deeper understanding of API documentation, ensuring clear and concise communication of API endpoints for internal and external teams.
           </>,
         ],
         images: [],
       },
       {
         company: "Eric Kayser",
-        timeframe: "2021 - 2022",
+        timeframe: "2021 – 2022",
         role: "Barista",
         achievements: [
           <>
-            Possesses strong customer service skills and excels in fast-paced
-            environments. Adaptable and quick to learn new procedures, with a
-            demonstrated ability to take initiative.
+            Demonstrated exceptional customer service skills in a high-volume setting, providing an efficient and positive experience for customers.
           </>,
           <>
-            Maintains a positive and professional attitude in high-volume
-            customer service settings. Quickly learns new skills and procedures,
-            and proactively addresses customer needs.
+            Adapted quickly to new procedures and technologies, taking initiative to streamline processes and ensure smooth operations during peak hours.
+          </>,
+          <>
+            Maintained a professional and friendly demeanor, effectively handling customer inquiries and building rapport in a fast-paced environment.
           </>,
         ],
         images: [],
-      },
+      }
     ],
   },
   studies: {
@@ -222,8 +212,7 @@ const about = {
         name: "BakTouk High School",
         description: (
           <>
-            Completed my primary and secondary education at Baktouk High School,
-            culminating in the Bac II qualification.
+            Completed primary and secondary education at BakTouk High School, earning the Bac II qualification with strong academic performance, laying the foundation for a successful academic and professional journey.
           </>
         ),
       },
@@ -231,9 +220,7 @@ const about = {
         name: "Royal University of Phnom Penh",
         description: (
           <>
-            Completed a Bachelor's degree in Computer Science, specializing in
-            software development and system architecture. Currently pursuing in
-            a Master's degree program in Computer Science.
+            Earned a Bachelor's degree in Computer Science, specializing in software development and system architecture. Currently pursuing a Master's degree, further advancing expertise in cutting-edge technologies and advanced computational principles.
           </>
         ),
       },
@@ -241,80 +228,39 @@ const about = {
         name: "Australia Centre of Education",
         description: (
           <>
-            Completed an IELTS preparation program, achieving enhanced
-            proficiency in academic and professional English communication.
+            Successfully completed an IELTS preparation program, achieving high proficiency in academic and professional English communication, enhancing my ability to work in international and cross-functional teams.
           </>
         ),
-      }
+      },
     ],
   },
-  technical: {
+  technical:
+  {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
         title: "Programming Languages",
-        description: <>Javascript, Java, SQL.</>,
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-02.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-          // {
-          //   src: "/images/projects/project-01/cover-03.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        description: <>JavaScript, Java, SQL</>,
+        images: [],
       },
       {
         title: "Frontend Technologies",
-        description: <>VueJS, NuxtJS, ReactJS, NextJS.</>,
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-04.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        description: <>VueJS, NuxtJS, ReactJS, NextJS</>,
+        images: [],
       },
       {
         title: "Backend Technologies",
-        description: (
-          <>NodeJS, ExpressJS, Supabase, Springboot.</>
-        ),
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-04.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        description: <>NodeJS, ExpressJS, Supabase, Spring Boot</>,
+        images: [],
       },
       {
         title: "Other Skills & Tools",
-        description: (
-          <>
-            Git, Github, MYSQL, MongoDB, DBeaver, Postman,
-            Prisma,Vercel, Render, Railway, Docker.
-          </>
-        ),
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-04.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        description: <>Git, GitHub, MySQL, MongoDB, DBeaver, Postman, Vercel, Render, Railway, Docker, Prisma</>,
+        images: [],
       },
-    ],
-  },
+    ]
+  }
 };
 
 const blog = {

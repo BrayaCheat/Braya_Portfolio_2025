@@ -28,7 +28,6 @@ export const Footer = () => {
           <Text paddingX="4">{person.name}</Text>
           <Text onBackground="neutral-weak">
             {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-            / Don't let your fear decide your fade.
             {/* <SmartLink
               style={{ marginLeft: "-0.125rem" }}
               href="https://once-ui.com/templates/magic-portfolio"
@@ -40,16 +39,20 @@ export const Footer = () => {
         <Flex gap="16">
           {social.map(
             (item) =>
-              item.link && (
-                <IconButton
-                  key={item.name}
-                  href={item.link}
-                  icon={item.icon}
-                  tooltip={item.name}
-                  size="s"
-                  variant="ghost"
-                />
-              ),
+              // item.link && (
+              //   // <IconButton
+              //   //   key={item.name}
+              //   //   href={item.link}
+              //   //   icon={item.icon}
+              //   //   tooltip={item.name}
+              //   //   size="s"
+              //   //   variant="ghost"
+              //   // />
+              //   item.icon
+              // ),
+              <a key={item.name} href={item.link} target="_blank" rel="noopener noreferrer">
+                {item.icon}
+              </a>
           )}
         </Flex>
       </Flex>

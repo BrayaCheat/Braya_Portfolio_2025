@@ -38,6 +38,7 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
+  const ctaTitle = 'About Braya';
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
       <script
@@ -70,7 +71,7 @@ export default function Home() {
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-s">
               {home.subline}
             </Text>
           </RevealFx>
@@ -91,7 +92,7 @@ export default function Home() {
                     size="m"
                   />
                 )}
-                {about.title}
+                {ctaTitle}
               </Flex>
             </Button>
           </RevealFx>

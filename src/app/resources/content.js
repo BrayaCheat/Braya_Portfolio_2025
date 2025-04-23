@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Software Developer",
+  role: "Software Developer & Music Creator",
   avatar: "/images/avatar.jpg",
   location: "Asia/Phnom_Penh", // Use the IANA time zone identifier for Phnom Penh, Cambodia
   languages: ["English", "Khmer"], // optional: Leave the array empty if you don't want to display languages
@@ -24,31 +24,29 @@ const newsletter = {
 };
 import { FaFacebook, FaTelegram, FaYoutube, FaGithub, FaGoogle } from "react-icons/fa6";
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
-    icon: <FaGithub/>,
+    icon: <FaGithub color="white"/>, // GitHub's true black
     link: "https://github.com/BrayaCheat",
   },
   {
     name: "Youtube",
-    icon: <FaYoutube/>,
+    icon: <FaYoutube color="#FF0000"/>, // YouTube's classic red (#FF0000)
     link: "https://www.youtube.com/@brayacheat7117",
   },
   {
     name: "Email",
-    icon: <FaGoogle/>,
+    icon: <FaGoogle color="#4285F4" />, // Google's blue (from Gmail)
     link: "mailto:prayacheat@gmail.com",
   },
   {
     name: "Telegram",
-    icon: <FaTelegram/>,
+    icon: <FaTelegram color="#26A5E4" />, // Telegram's official blue
     link: "https://t.me/brayacheat19",
   },
   {
     name: "Facebook",
-    icon: <FaFacebook/>,
+    icon: <FaFacebook color="#1877F2" />, // Facebook's current blue
     link: "https://www.facebook.com/share/12L8Xoengpt/?mibextid=wwXIfr",
   },
 ];
@@ -86,20 +84,29 @@ const about = {
     title: "Introduction",
     description: (
       <div className="space-y-6">
-        <h3 className="text-xl font-semibold mb-4">Introduction:</h3>
         {/* Roles */}
         <ul className="text-[16px]">
-          <li><strong>Full Name:</strong> ChanChaoBraya Cheat</li>
-          <li><strong>Role:</strong> Software Developer</li>
-          <li><strong>By Day:</strong> Building fullstack applications with modern web technologies</li>
-          <li><strong>By Night:</strong> Exploring music production with a focus on the Vinahouse genre</li>
-          <li><strong>Location:</strong> Phnom Penh, Cambodia — driven by a love for technology and creative expression</li>
+          <li>
+            <p>
+              By day, I architect scalable, full-stack applications with modern
+              web technologies, turning complex problems into elegant solutions.
+              By night, I channel my creativity into Vinahouse music production,
+              where rhythm and code share a common language: structure,
+              innovation, and emotion.
+            </p>
+          </li>
+          <li>
+            <p>
+              Based in Phnom Penh, Cambodia, I thrive at the intersection of
+              logic and artistry—whether building robust systems or crafting
+              beats that move people.
+            </p>
+          </li>
         </ul>
 
-        <br/>
+        <br />
 
-        <div className="prose dark:prose-invert max-w-none">
-
+        {/* <div className="prose dark:prose-invert max-w-none"> */}
           {/* Tech Stack */}
           {/* <div className="mb-10">
             <h3 className="text-xl font-semibold mb-4">Technical Skills:</h3>
@@ -122,9 +129,10 @@ const about = {
             </ul>
           </div> */}
 
-          {/* Collab CTA */}
-          <div className="mt-8 mb-12">
-            <h3 className="text-xl font-semibold mb-4">Open to opportunities involving:</h3>
+          {/* <div className="mt-8 mb-12">
+            <h3 className="text-xl font-semibold mb-4">
+              Open to opportunities involving:
+            </h3>
             <ul className="flex flex-wrap gap-3">
               <li className="inline-flex items-center gap-1 bg-red-100 dark:bg-red-900/50 px-3 py-2 rounded-md text-sm">
                 Building reliable and scalable web applications
@@ -136,16 +144,16 @@ const about = {
                 Contributing to meaningful, team-driven environments
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          {/* Personal Quote */}
-          <blockquote className="mt-10 mb-6 italic border-l-4 border-pink-500 dark:border-pink-400 pl-6 py-2 text-lg">
-            "I strive to write code that is both functional and thoughtful,
-            and to create experiences that connect people — whether through technology or music."
-          </blockquote>
-        </div>
+          {/* <blockquote className="mt-10 mb-6 italic border-l-4 border-pink-500 dark:border-pink-400 pl-6 py-2 text-lg">
+            "I strive to write code that is both functional and thoughtful, and
+            to create experiences that connect people — whether through
+            technology or music."
+          </blockquote> */}
+        {/* </div> */}
       </div>
-    )
+    ),
   },
   work: {
     display: true, // set to false to hide this section
@@ -157,13 +165,20 @@ const about = {
         role: "Software Developer",
         achievements: [
           <>
-            Developed a high-performance online gaming platform, improving UI responsiveness and reducing user latency by 50%. Optimized graphics for lower-end devices by minimizing resource-intensive effects, ensuring smooth performance on a wider range of hardware.
+            Developed a high-performance online gaming platform, improving UI
+            responsiveness and reducing user latency by 50%. Optimized graphics
+            for lower-end devices by minimizing resource-intensive effects,
+            ensuring smooth performance on a wider range of hardware.
           </>,
           <>
-            Built and fine-tuned interactive game interfaces (e.g., Baccarat), ensuring smooth gameplay, real-time feedback, and seamless user experience.
+            Built and fine-tuned interactive game interfaces (e.g., Baccarat),
+            ensuring smooth gameplay, real-time feedback, and seamless user
+            experience.
           </>,
           <>
-            Actively collaborating with backend teams to integrate APIs and WebSocket events, while independently exploring Spring Boot through personal projects and tutorials.
+            Actively collaborating with backend teams to integrate APIs and
+            WebSocket events, while independently exploring Spring Boot through
+            personal projects and tutorials.
           </>,
         ],
         images: [],
@@ -174,13 +189,19 @@ const about = {
         role: "Software Developer (Internship)",
         achievements: [
           <>
-            Gained hands-on experience in API integration within the ERPNext environment, contributing to the system's standardization and streamlining workflows.
+            Gained hands-on experience in API integration within the ERPNext
+            environment, contributing to the system's standardization and
+            streamlining workflows.
           </>,
           <>
-            Collaborated with cross-functional teams to support the product launch, assisting with ERPNext workflows and helping document API processes for seamless integration.
+            Collaborated with cross-functional teams to support the product
+            launch, assisting with ERPNext workflows and helping document API
+            processes for seamless integration.
           </>,
           <>
-            Developed a deeper understanding of API documentation, ensuring clear and concise communication of API endpoints for internal and external teams.
+            Developed a deeper understanding of API documentation, ensuring
+            clear and concise communication of API endpoints for internal and
+            external teams.
           </>,
         ],
         images: [],
@@ -213,22 +234,31 @@ const about = {
           //   </a>
           // </>,
           <>
-            Led the design and development of a mobile-first digital drink ordering platform using Nuxt.js and Tailwind CSS, providing a fast, modern, and intuitive user experience.
+            Led the design and development of a mobile-first digital drink
+            ordering platform using Nuxt.js and Tailwind CSS, providing a fast,
+            modern, and intuitive user experience.
           </>,
           <>
-            Built and integrated a real-time Telegram notification system that instantly alerts staff of new orders, significantly reducing response time and improving operational flow.
+            Built and integrated a real-time Telegram notification system that
+            instantly alerts staff of new orders, significantly reducing
+            response time and improving operational flow.
           </>,
           <>
-            Implemented an interactive location picker using Leaflet.js, allowing customers to easily drop a pin for precise delivery — capturing only essential details: name, phone number, and location.
+            Implemented an interactive location picker using Leaflet.js,
+            allowing customers to easily drop a pin for precise delivery —
+            capturing only essential details: name, phone number, and location.
           </>,
           <>
-            Streamlined user and staff experiences with features like dynamic category filtering, product management, and QR code access for effortless mobile ordering.
+            Streamlined user and staff experiences with features like dynamic
+            category filtering, product management, and QR code access for
+            effortless mobile ordering.
           </>,
           <>
-            Deployed on Vercel to ensure optimized performance, fast global delivery, and robust uptime with modern cloud deployment practices.
-          </>
+            Deployed on Vercel to ensure optimized performance, fast global
+            delivery, and robust uptime with modern cloud deployment practices.
+          </>,
         ],
-        images: []
+        images: [],
       },
       {
         company: "VORTEX AI CHATBOT",
@@ -241,23 +271,33 @@ const about = {
           //   </a>
           // </>,
           <>
-            Developed an AI-powered chatbot using Nuxt 3 and integrated with the Gemini API to deliver fast, responsive, and intelligent conversations that enhance user interaction.
+            Developed an AI-powered chatbot using Nuxt 3 and integrated with the
+            Gemini API to deliver fast, responsive, and intelligent
+            conversations that enhance user interaction.
           </>,
           <>
-            Designed and implemented an intuitive user interface that facilitates easy communication, resulting in a seamless chat experience for users across devices.
+            Designed and implemented an intuitive user interface that
+            facilitates easy communication, resulting in a seamless chat
+            experience for users across devices.
           </>,
           <>
-            Focused on optimizing the chatbot's performance, ensuring smooth, real-time processing of messages and responses through effective API calls and intelligent state management.
+            Focused on optimizing the chatbot's performance, ensuring smooth,
+            real-time processing of messages and responses through effective API
+            calls and intelligent state management.
           </>,
           <>
-            Leveraged modern technologies like Nuxt 3, Tailwind CSS, and the Gemini API to create an interactive platform capable of handling dynamic user queries and providing accurate responses.
+            Leveraged modern technologies like Nuxt 3, Tailwind CSS, and the
+            Gemini API to create an interactive platform capable of handling
+            dynamic user queries and providing accurate responses.
           </>,
           <>
-            Deployed the chatbot on Vercel to guarantee fast loading times, scalability, and reliable performance across various regions and devices.
-          </>
+            Deployed the chatbot on Vercel to guarantee fast loading times,
+            scalability, and reliable performance across various regions and
+            devices.
+          </>,
         ],
-        images: []
-      }
+        images: [],
+      },
     ],
   },
   studies: {
@@ -268,7 +308,8 @@ const about = {
         name: "Bak Touk High School",
         description: (
           <>
-            Completed primary and secondary education with Bac II qualification and strong academic performance.
+            Completed primary and secondary education with Bac II qualification
+            and strong academic performance.
           </>
         ),
       },
@@ -276,8 +317,9 @@ const about = {
         name: "Royal University of Phnom Penh (RUPP)",
         description: (
           <>
-            Bachelor’s Degree in Computer Science — focused on software development and system architecture.
-            Currently pursuing a Master’s Degree to deepen expertise in advanced technologies.
+            Bachelor’s Degree in Computer Science — focused on software
+            development and system architecture. Currently pursuing a Master’s
+            Degree to deepen expertise in advanced technologies.
           </>
         ),
       },
@@ -285,14 +327,14 @@ const about = {
         name: "Australia Centre for Education (ACE)",
         description: (
           <>
-            Completed IELTS preparation program with high proficiency in academic and professional English communication.
+            Completed IELTS preparation program with high proficiency in
+            academic and professional English communication.
           </>
         ),
       },
     ],
   },
-  technical:
-  {
+  technical: {
     display: true, // set to false to hide this section
     title: "Technical Skills",
     skills: [
@@ -313,11 +355,16 @@ const about = {
       },
       {
         title: "Other Skills & Tools",
-        description: <>Git, GitHub, MySQL, MongoDB, DBeaver, Postman, Vercel, Render, Railway, Docker, Prisma</>,
+        description: (
+          <>
+            Git, GitHub, MySQL, MongoDB, DBeaver, Postman, Vercel, Render,
+            Railway, Docker, Prisma
+          </>
+        ),
         images: [],
       },
-    ]
-  }
+    ],
+  },
 };
 
 const blog = {

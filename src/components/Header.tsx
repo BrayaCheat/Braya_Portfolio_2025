@@ -81,7 +81,7 @@ export const Header = () => {
                     className="s-flex-hide"
                     prefixIcon="person"
                     href="/about"
-                    label={about.label}
+                    label={`About Braya`}
                     selected={pathname === "/about"}
                   />
                   <ToggleButton
